@@ -89,6 +89,7 @@ section h2 {
 .contact-info a:hover {
   text-decoration: underline;
 }
+<<<<<<< HEAD
 /* Contact Form Styles */
 .contact-form {
   padding: 30px;
@@ -113,3 +114,5 @@ section h2 {
   padding: 12px;
   font-weight: 600;
 }
+=======
+>>>>>>> ce2e03d81447e1044508f63a5af6ab587404922a
