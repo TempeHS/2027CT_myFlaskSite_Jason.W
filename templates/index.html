@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-{% extends 'base.html' %} {% block title %}Contact - My Flask Site{% endblock %}
-{% block content %}
-=======
-{% extends 'base.html' %} {% block title %}Home - My Flask Site{% endblock %} {%
-block content %}
->>>>>>> ce2e03d81447e1044508f63a5af6ab587404922a
+{% extends 'base.html' %} {% block title %}Home - My Flask Site{% endblock %}
+{%block content %}
 <!-- Hero Carousel (keep your existing carousel here) -->
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
   <!-- Hero Carousel -->
@@ -113,19 +108,14 @@ block content %}
               alt="Feature 1"
             />
             <div class="card-body">
-<<<<<<< HEAD
               <h5 class="card-title">Myself</h5>
               <p class="card-text">
                 Hey! Learn a little bit about me, what do I do? What can I do?
                 And many more!
-=======
-              <h5 class="card-title">Fast & Reliable</h5>
-              <p class="card-text">
-                Our platform is optimized for speed and reliability, ensuring a
-                seamless experience.
->>>>>>> ce2e03d81447e1044508f63a5af6ab587404922a
               </p>
-              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="{{ url_for('about') }}" class="btn btn-primary"
+                >Click to See</a
+              >
             </div>
           </div>
         </div>
@@ -139,19 +129,13 @@ block content %}
               alt="Feature 2"
             />
             <div class="card-body">
-<<<<<<< HEAD
               <h5 class="card-title">Projects</h5>
               <p class="card-text">
                 Learn about my projects! See what I do when I'm bored!
               </p>
-              <a href="#" class="btn btn-primary">Click to See</a>
-=======
-              <h5 class="card-title">Easy to Use</h5>
-              <p class="card-text">
-                Simple and intuitive interface designed with users in mind.
-              </p>
-              <a href="#" class="btn btn-primary">Learn More</a>
->>>>>>> ce2e03d81447e1044508f63a5af6ab587404922a
+              <a href="{{ url_for('projects') }}" class="btn btn-primary"
+                >Click to See</a
+              >
             </div>
           </div>
         </div>
@@ -165,22 +149,12 @@ block content %}
               alt="Feature 3"
             />
             <div class="card-body">
-<<<<<<< HEAD
               <h5 class="card-title">Resume/CV</h5>
               <p class="card-text">
                 Learn about my past jobs, experiences, and many more!
               </p>
               <a href="{{ url_for('contact') }}" class="btn btn-primary"
                 >Have a look</a
-=======
-              <h5 class="card-title">24/7 Support</h5>
-              <p class="card-text">
-                Our dedicated team is here to help you anytime you need
-                assistance.
-              </p>
-              <a href="{{ url_for('contact') }}" class="btn btn-primary"
-                >Contact Us</a
->>>>>>> ce2e03d81447e1044508f63a5af6ab587404922a
               >
             </div>
           </div>
