@@ -1,10 +1,77 @@
 {% extends "base.html" %} {% block title %}Project 1{% endblock %} {% block
 content %}
 <div class="container mt-5 pt-5">
-  <h1>Project 1</h1>
-  <p>Full details about project 1 go here.</p>
-  <a href="{{ url_for('projects') }}" class="btn btn-secondary"
-    >← Back to Projects</a
-  >
+  <h1 class="mb-3">Project 1</h1>
+  <p class="lead mb-4">
+    This page shows the project overview, screenshots, and what I learned.
+  </p>
+
+  <!-- Overview -->
+  <section class="mb-5">
+    <h2 class="h4">Overview</h2>
+    <p>
+      I used the website "HSC Software Engineering" site created by Mr.Jones.
+      This website allows me to learn what everything is, how to use it, and
+      where to put it. Having this site helped me create this website from
+      scratch and develop more as I have more projects. This website project was
+      an Assessment Task, but I used this time to create my own resume website
+      where you can learn a bit about me. It was a struggle but in the end I
+      added to the website and it looks like what it does now.
+    </p>
+  </section>
+
+  <!-- Image + explanation 1 -->
+  <section class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <!-- Change only the filename below if your image name is different -->
+      <img
+        src="{{ url_for('static', filename='images/project1/project1ss1.jpg') }}"
+        class="img-fluid rounded shadow-sm"
+        alt="Project 1 screenshot 1"
+      />
+    </div>
+    <div class="col-md-6">
+      <h3 class="h5 mt-3 mt-md-0">Feature 1</h3>
+      <p>Explain what is shown in this screenshot and why it is important.</p>
+    </div>
+  </section>
+
+  <!-- Image + explanation 2 -->
+  <section class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="col-md-6">
+      <!-- Change only the filename below if your image name is different -->
+      <img
+        src="{{ url_for('static', filename='images/project1/project1ss2.jpg') }}"
+        class="img-fluid rounded shadow-sm"
+        alt="Project 1 screenshot 2"
+      />
+    </div>
+    <div class="col-md-6">
+      <h3 class="h5 mt-3 mt-md-0">Feature 2</h3>
+      <p>
+        Add details about your process, challenges, and how you solved them.
+      </p>
+    </div>
+  </section>
+
+  <!-- Image + explanation 3 -->
+  <section class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <!-- Change only the filename below if your image name is different -->
+      <img
+        src="{{ url_for('static', filename='images/project1/project1ss3.jpg') }}"
+        class="img-fluid rounded shadow-sm"
+        alt="Project 1 screenshot 3"
+      />
+    </div>
+    <div class="col-md-6">
+      <h3 class="h5 mt-3 mt-md-0">Results</h3>
+      <p>Summarize final results and what you would improve next.</p>
+    </div>
+  </section>
+
+  <a href="{{ url_for('projects') }}" class="btn btn-secondary">
+    ← Back to Projects
+  </a>
 </div>
 {% endblock %}
