@@ -1,94 +1,66 @@
 {% extends "base.html" %} {% block title %}Project 2{% endblock %} {% block
-extra_css %}
-<style>
-  .project-hero {
-    background: linear-gradient(135deg, #0d6efd, #6f42c1);
-    color: #fff;
-    border-radius: 1rem;
-    padding: 2.5rem 2rem;
-  }
-
-  .project-card img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-  }
-
-  .project-card {
-    border: 0;
-    border-radius: 1rem;
-    overflow: hidden;
-  }
-</style>
-{% endblock %} {% block content %}
-<div class="container mt-5 pt-5 pb-4">
-  <!-- Hero -->
-  <section class="project-hero shadow-sm mb-5">
-    <h1 class="display-6 fw-bold mb-2">Project 2</h1>
-    <p class="lead mb-0">
-      A fresh layout showing what I built, what I learned, and what I’ll improve
-      next.
-    </p>
-  </section>
+content %}
+<div class="container mt-5 pt-5">
+  <h1 class="mb-3">Project 2</h1>
+  <p class="lead mb-4">
+    Take a look at how I built Project 2 and what I learned.
+  </p>
 
   <!-- Overview -->
-  <section class="mb-4">
-    <h2 class="h4 mb-3">Overview</h2>
-    <p class="text-secondary">
+  <section class="mb-5">
+    <h2 class="h4">Overview</h2>
+    <p>
       Write your Project 2 summary here. Explain what the project is, why you
       built it, and what your final result was.
     </p>
   </section>
 
-  <!-- Feature cards -->
-  <section class="row g-4 mb-5">
-    <div class="col-lg-4">
-      <article class="card project-card shadow-sm h-100">
-        <img
-          src="{{ url_for('static', filename='images/project2/project2ss1.jpg') }}"
-          alt="Project 2 screenshot 1"
-        />
-        <div class="card-body">
-          <h3 class="h5">Feature 1</h3>
-          <p class="mb-0 text-secondary">
-            Describe what this screenshot shows and why it matters.
-          </p>
-        </div>
-      </article>
+  <!-- Image + explanation 1 -->
+  <section class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <img
+        src="{{ url_for('static', filename='images/project2/project2ss1.jpg') }}"
+        class="img-fluid rounded shadow-sm"
+        alt="Project 2 screenshot 1"
+      />
     </div>
-
-    <div class="col-lg-4">
-      <article class="card project-card shadow-sm h-100">
-        <img
-          src="{{ url_for('static', filename='images/project2/project2ss2.jpg') }}"
-          alt="Project 2 screenshot 2"
-        />
-        <div class="card-body">
-          <h3 class="h5">Feature 2</h3>
-          <p class="mb-0 text-secondary">
-            Describe your second feature or lesson learned.
-          </p>
-        </div>
-      </article>
-    </div>
-
-    <div class="col-lg-4">
-      <article class="card project-card shadow-sm h-100">
-        <img
-          src="{{ url_for('static', filename='images/project2/project2ss3.jpg') }}"
-          alt="Project 2 screenshot 3"
-        />
-        <div class="card-body">
-          <h3 class="h5">Results</h3>
-          <p class="mb-0 text-secondary">
-            Summarise your final result and next improvements.
-          </p>
-        </div>
-      </article>
+    <div class="col-md-6">
+      <h3 class="h5 mt-3 mt-md-0">Feature 1</h3>
+      <p>Describe what this screenshot shows and why it matters.</p>
     </div>
   </section>
 
-  <a href="{{ url_for('projects') }}" class="btn btn-outline-secondary">
+  <!-- Image + explanation 2 -->
+  <section class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="col-md-6">
+      <img
+        src="{{ url_for('static', filename='images/project2/project2ss2.jpg') }}"
+        class="img-fluid rounded shadow-sm"
+        alt="Project 2 screenshot 2"
+      />
+    </div>
+    <div class="col-md-6">
+      <h3 class="h5 mt-3 mt-md-0">Feature 2</h3>
+      <p>Describe your second feature or lesson learned.</p>
+    </div>
+  </section>
+
+  <!-- Image + explanation 3 -->
+  <section class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <img
+        src="{{ url_for('static', filename='images/project2/project2ss3.jpg') }}"
+        class="img-fluid rounded shadow-sm"
+        alt="Project 2 screenshot 3"
+      />
+    </div>
+    <div class="col-md-6">
+      <h3 class="h5 mt-3 mt-md-0">Results</h3>
+      <p>Summarise your final result and next improvements.</p>
+    </div>
+  </section>
+
+  <a href="{{ url_for('projects') }}" class="btn btn-secondary">
     ← Back to Projects
   </a>
 </div>
