@@ -45,6 +45,12 @@
         <h4 class="mb-4">Send us a Message</h4>
 
         <form action="#" method="POST">
+          <!-- Success Alert (initially hidden) -->
+          <div class="alert alert-success d-none" id="successAlert">
+            <strong>Thank you!</strong> Your message has been sent. We'll be in
+            touch soon.
+          </div>
+        <form action="#" method="POST">
           <!-- Name Field -->
           <div class="mb-3">
             <label for="name" class="form-label">Your Name *</label>
@@ -105,4 +111,21 @@
     </div>
   </div>
 </div>
+{% block extra_js %}
+<script>
+  const form = document.querySelector('.contact-form form');
+  const alert = document.getElementById('successAlert');
+  
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();  // Stop actual submission
+    
+    // Show success message
+    alert.classList.remove('d-none');
+    alert.scrollIntoView({ behavior: 'smooth' });
+    
+    // Reset form
+    form.reset();
+  });
+</script>
+{% endblock %}
 {% endblock %}
