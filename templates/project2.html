@@ -12,7 +12,9 @@ content %}
     <h2 class="h4">Overview</h2>
     <p>
       Using the same website as project 1, Mr. Jones (my computer tech teacher),
-      allowed me to freely customise my
+      allowed me to freely customise my Cipherforge bot. It sends a normal
+      message such as Hello, and encrypts it to a crazy mixed up messages based
+      on what I have customised.
     </p>
   </section>
 
@@ -26,8 +28,13 @@ content %}
       />
     </div>
     <div class="col-md-6">
-      <h3 class="h5 mt-3 mt-md-0">Feature 1</h3>
-      <p>Describe what this screenshot shows and why it matters.</p>
+      <h3 class="h5 mt-3 mt-md-0">Lessons</h3>
+      <p>
+        I had to compete 9 lessons in total for this app to fully work. It was a
+        fun time designing this app. I had multiple failure which I fixed from
+        typos or silly mistakes. These lessons were designed to help us create
+        and understand how Ciphering works and what it does.
+      </p>
     </div>
   </section>
 
@@ -41,8 +48,19 @@ content %}
       />
     </div>
     <div class="col-md-6">
-      <h3 class="h5 mt-3 mt-md-0">Feature 2</h3>
-      <p>Describe your second feature or lesson learned.</p>
+      <h3 class="h5 mt-3 mt-md-0">Ciphering</h3>
+      <p>
+        This might just look like a bunch of words mixed as a string but not,
+        its a code that mixes up words. Lets say you have 'hello' as a word. it
+        shifts the letters by 5, the given number, so the new word would be
+        'MJQQT'. H + 5 alphabet letters would be M, E + 5 would be J, e.t.c.
+        Block sizes makes it split up, the new word being 'MJQQ T'. Having
+        longer words like Hello World, the block size would split it into little
+        blocks, 'HELL O WO RLD', a space counts as a block too! The noise is a
+        symbol that gets intserted. Given you have '~', you can choose the
+        interval it is put in, so for the code shown, it'll be every 3
+        characters.
+      </p>
     </div>
   </section>
 
@@ -56,8 +74,32 @@ content %}
       />
     </div>
     <div class="col-md-6">
-      <h3 class="h5 mt-3 mt-md-0">Results</h3>
-      <p>Summarise your final result and next improvements.</p>
+      <h3 class="h5 mt-3 mt-md-0">Login</h3>
+      <p>
+        Most people in the class chose to have a login. It allows people to
+        register an account to be able to use the app, such as games like
+        Roblox, Discord, or Instagram. You can create a password with 8 letters
+        or characters, which gets stored into a database (db). This db saves all
+        your login information and allows you to get into your site.
+      </p>
+    </div>
+  </section>
+
+  <section class="row align-items-center mb-5 flex-md-row-reverse">
+    <div class="col-md-6">
+      <img
+        src="{{ url_for('static', filename='images/project2/project2ss4.jpg') }}"
+        class="img-fluid rounded shadow-sm"
+        alt="Project 2 screenshot 4"
+      />
+    </div>
+    <div class="col-md-6">
+      <h3 class="h5 mt-3 mt-md-0">Cipherforge</h3>
+      <p>
+        The best part of them all, the actual ciphering. In the image given, I
+        used the word hello. You are able to change the different settings, at
+        the bottom.
+      </p>
     </div>
   </section>
 
