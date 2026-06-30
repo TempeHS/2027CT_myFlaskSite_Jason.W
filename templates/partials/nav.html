@@ -1,7 +1,19 @@
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav
+  id="mainNavbar"
+  class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav-autohide"
+>
   <div class="container">
-    <a class="navbar-brand" href="{{ url_for('home') }}">My Flask Site</a>
+    <a class="navbar-brand d-flex align-items-center" href="{{ url_for('home') }}">
+  <img
+    src="{{ url_for('static', filename='images/logo.png') }}"
+    alt="Site logo"
+    width="32"
+    height="32"
+    class="me-2 rounded"
+  />
+  <span>My Flask Site</span>
+</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -13,15 +25,34 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('home') }}">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
-        </li>
-      </ul>
+<ul class="navbar-nav ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#"
+      id="projectsDropdown"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Projects
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="projectsDropdown">
+      <li><a class="dropdown-item" href="{{ url_for('projects') }}">All Projects</a></li>
+      <li><hr class="dropdown-divider" /></li>
+      <li><a class="dropdown-item" href="{{ url_for('project1') }}">This Website</a></li>
+      <li><a class="dropdown-item" href="{{ url_for('project2') }}">Cipherforge</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+  </li>
+</ul>
     </div>
   </div>
 </nav>
