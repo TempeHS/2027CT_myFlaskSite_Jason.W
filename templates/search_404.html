@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block title %}Page Not Found{% endblock %} {% block
+content %}
+<div
+  class="search-404-page d-flex flex-column align-items-center justify-content-center text-white text-center"
+>
+  <h1 class="display-1 fw-bold">404</h1>
+  <h2 class="mb-3">No page found for "<em>{{ query }}</em>"</h2>
+  <p class="mb-4">Try searching for: home, projects, contact</p>
+  <a href="{{ url_for('home') }}" class="btn btn-light btn-lg">
+    🏠 Take me home
+  </a>
+</div>
+{% endblock %}

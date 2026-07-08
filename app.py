@@ -1,6 +1,15 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
+
+# Pages that can be searched
+PAGES = {
+    "home": {"title": "Home", "url": "/"},
+    "projects": {"title": "Projects", "url": "/projects"},
+    "project1": {"title": "This Website", "url": "/project1"},
+    "project2": {"title": "Cipherforge", "url": "/project2"},
+    "contact": {"title": "Contact", "url": "/contact"},
+}
 
 
 @app.route("/")
@@ -31,6 +40,15 @@ def project2():
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
+
+
+@app.route("/search")
+def search():
+    query = request.args.get("q", "").strip().lower()
+    for key, page in PAGES.items():
+        if query in page["title"].lower() or query in key.lower():
+            return redirect(page["url"])
+    return render_template("search_404.html", query=query)
 
 
 if __name__ == "__main__":

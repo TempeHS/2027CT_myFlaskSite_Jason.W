@@ -151,3 +151,18 @@ body {
 .site-footer a:hover {
   text-decoration: underline;
 }
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+/* Search 404 Page */
+.search-404-page {
+  min-height: 80vh;
+  background-color: #dc3545;
+  width: 100%;
+  padding: 2rem;
+}
