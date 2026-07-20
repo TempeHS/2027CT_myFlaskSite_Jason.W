@@ -1,13 +1,13 @@
-# Website Name
+# Jason's Resume
 
 | Field                          | Detail |
 | ------------------------------ | ------ |
-| **Website Title**              |        |
-| **Student Name(s)**            |        |
-| **Class / Course**             |        |
-| **Repository**                 |        |
-| **Live Site / Codespaces URL** |        |
-| **Date**                       |        |
+| **Website Title**              |   Jason's Resume Website     |
+| **Student Name(s)**            |    Jason Wang    |
+| **Class / Course**             |    9CT1    |
+| **Repository**                 |    2027CT_myFlaskSite_Jason.W    |
+| **Live Site / Codespaces URL** |    https://psychic-fiesta-v64rrj9vvwpg3wq6j-5000.app.github.dev/    |
+| **Date**                       |    31/07/2026    |
 
 > Your website is the main piece of work. This README is short on purpose — it
 > points a reader to your **2-minute walkthrough** and gives an honest
@@ -17,9 +17,9 @@
 
 ## 1. Overview
 
-**Purpose:** <!-- One or two sentences: what the site is and why it exists (from your Statement of Intent). -->
+**Purpose:** Having a future job can be important. It helps people live their day to day life, without the worry of being late to payments. This thus leads me to create my own resume, where people can view who I am, what I have achieved, and how I achieved it. <!-- One or two sentences: what the site is and why it exists (from your Statement of Intent). -->
 
-**Target audience:** <!-- One sentence: who the site is for (from your personas). -->
+**Target audience:** I'm looking to show this towards employers, and students of younger years who inspire to be something, or someone in their future.<!-- One sentence: who the site is for (from your personas). -->
 
 **Technology stack:** Python Flask · Jinja2 templates · Bootstrap (CDN) · custom CSS · pytest
 
@@ -95,7 +95,7 @@ planning. Be honest and use evidence — point to a page, a feature or a test.
 | ------------- | ---------------- | ------- | ---------------------- |
 | Bootstrap     | Bootstrap team   | MIT     | Layout and components  |
 | Flask         | Pallets Projects | BSD     | Web server and routing |
-|               |                  |         |                        |
+| Images        |  Google          | CCL     | Website images, logos, headers|
 |               |                  |         |                        |
 
 ---
