@@ -1,8 +1,9 @@
+import random
 from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
-# Pages that can be searched
+
 PAGES = {
     "home": {"title": "Home", "url": "/"},
     "projects": {"title": "Projects", "url": "/projects"},
@@ -12,9 +13,22 @@ PAGES = {
 }
 
 
+QUOTES = [
+    "The only way to do great work is to love what you do. – Steve Jobs",
+    "In the middle of every difficulty lies opportunity. – Albert Einstein",
+    "It does not matter how slowly you go as long as you do not stop. – Confucius",
+    "Life is what happens when you're busy making other plans. – John Lennon",
+    "The future belongs to those who believe in the beauty of their dreams. – Eleanor Roosevelt",
+    "Success is not final, failure is not fatal: it is the courage to continue that counts. – Winston Churchill",
+    "You only live once, but if you do it right, once is enough. – Mae West",
+    "In three words I can sum up everything I've learned about life: it goes on. – Robert Frost",
+]
+
+
 @app.route("/")
 def home():
-    return render_template("index.html")
+    quote = random.choice(QUOTES)
+    return render_template("index.html", quote=quote)
 
 
 @app.route("/about")

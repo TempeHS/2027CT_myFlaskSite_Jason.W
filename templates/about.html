@@ -5,12 +5,12 @@ content %}
     <div class="col-md-6">
       <h1 class="mb-3">Hi, I’m Jason 👋</h1>
       <p class="lead">
-        I’m a student learning web development with Flask. I enjoy building
-        clean, simple websites and improving my Python skills.
+        I’m a student At Tempe High School learning web development with Flask.
+        This website was created by me, with the help of Mr.Jones
       </p>
       <p>
-        In my free time, I like coding projects, learning new tech, and creating
-        useful tools for school and personal use.
+        In my free time, I like coding projects, learning new tech, playing
+        games, and hanging out with friends.
       </p>
     </div>
 
@@ -67,6 +67,52 @@ content %}
         </button>
       </div>
     </div>
-    {% endblock %}
+    <div class="game-gallery">
+      <div class="game-card">
+        <img
+          src="{{ url_for('static', filename='images/about/game1.jpg') }}"
+          alt="Game 1 Title"
+        />
+        <div class="game-info">
+          <h3>Assetto Corsa</h3>
+          <p>
+            Assetto Corsa was my first Racing game, which I really liked. It
+            helped me learn how to drive cars, fast, but with control. If I
+            messed up, I would restart.
+          </p>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img
+          src="{{ url_for('static', filename='images/about/game2.jpg') }}"
+          alt="Game 2 Title"
+        />
+        <div class="game-info">
+          <h3>Valorant</h3>
+          <p>
+            Valorant, my favourite game to play with friends. I duo, trio, or
+            even 5 stack with the friends I play with. It's better with friends!
+            Maybe you'll like it too!
+          </p>
+        </div>
+      </div>
+
+      <div class="game-card">
+        <img
+          src="{{ url_for('static', filename='images/about/game3.jpg') }}"
+          alt="Game 3 Title"
+        />
+        <div class="game-info">
+          <h3>F1 25/26</h3>
+          <p>
+            F1 25 or 26 is an easier version of Assetto Corsa, where you drive
+            F1 cars around tracks from the real world. It helps me understand
+            the racing line, and good times to focus on different things.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+{% endblock %}

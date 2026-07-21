@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}My Flask Site{% endblock %}</title>
 
-    <!-- Bootstrap CSS from CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
-    <!-- Your custom CSS file -->
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
@@ -22,11 +20,7 @@
   <body>
     {% include 'partials/nav.html' %}
 
-    <main class="site-content">
-      {% block content %}
-      <!-- Page content goes here -->
-      {% endblock %}
-    </main>
+    <main class="site-content">{% block content %} {% endblock %}</main>
 
     <footer class="site-footer">
       <div class="footer-inner">
@@ -45,27 +39,24 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 
-    <!-- Bootstrap JavaScript from CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script>
       let lastScroll = 0;
-      const navbar = document.querySelector('nav');
+      const navbar = document.querySelector("nav");
 
-      window.addEventListener('scroll', () => {
+      window.addEventListener("scroll", () => {
         const currentScroll = window.scrollY;
 
         if (currentScroll <= 0) {
-          navbar.style.transform = 'translateY(0)';
+          navbar.style.transform = "translateY(0)";
           return;
         }
 
         if (currentScroll > lastScroll) {
-          // Scrolling down - hide
-          navbar.style.transform = 'translateY(-100%)';
-        } else {
-          // Scrolling up - show
-          navbar.style.transform = 'translateY(0)';
+          navbar.style.transform = "translateY(-100%)";
+
+          navbar.style.transform = "translateY(0)";
         }
 
         lastScroll = currentScroll;
@@ -73,5 +64,116 @@
     </script>
 
     {% block extra_js %}{% endblock %}
+
+    <div id="music-player">
+      <div id="music-controls">
+        <span id="song-name">Loading...</span>
+        <button onclick="togglePlay()" id="play-btn">▶ Play</button>
+        <button onclick="skipSong()">⏭ Skip</button>
+        <input
+          type="range"
+          id="volume-slider"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.5"
+          oninput="changeVolume(this.value)"
+          title="Volume"
+        />
+      </div>
+      <span id="music-disclaimer"
+        >⚠️ Press play again after changing pages</span
+      >
+    </div>
+
+    <audio id="audio-player"></audio>
+
+    <script>
+      const songs = [
+        {
+          src: "{{ url_for('static', filename='music/Blood-Orange---Champagne-Coast.mp3') }}",
+          name: "Champagne Coast",
+        },
+        {
+          src: "{{ url_for('static', filename='music/Sabrina-Carpenter---Espresso.mp3') }}",
+          name: "Espresso",
+        },
+        {
+          src: "{{ url_for('static', filename='music/GIGI-DAGOSTINO---LAMOUR-TOUJOURS.mp3') }}",
+          name: "L'Amour Toujours",
+        },
+        {
+          src: "{{ url_for('static', filename='music/Tate-McRae---Just-Keep-Watching-(From-F1-The-Movie).mp3') }}",
+          name: "Just Keep Watching",
+        },
+        {
+          src: "{{ url_for('static', filename='music/Justin-Bieber---Beauty-And-A-Beat-(Official-Music-Video)-ft.-Nicki-Minaj.mp3') }}",
+          name: "Beauty And A Beat",
+        },
+        {
+          src: "{{ url_for('static', filename='music/Taylor-Swift---The-Fate-of-Ophelia-(Official-Music-Video).mp3') }}",
+          name: "The Fate of Ophelia",
+        },
+        {
+          src: "{{ url_for('static', filename='music/Lady-Gaga,-Bruno-Mars---Die-With-A-Smile-(Official-Music-Video).mp3') }}",
+          name: "Die With A Smile",
+        },
+        {
+          src: "{{ url_for('static', filename='music/sombr---back-to-friends-(official-video).mp3') }}",
+          name: "Back To Friends",
+        },
+        {
+          src: "{{ url_for('static', filename='music/SIENNA-SPIRO---Die-On-This-Hill-(Audio).mp3') }}",
+          name: "Die On This Hill",
+        },
+      ];
+
+      let currentSong = parseInt(localStorage.getItem("currentSong")) || 0;
+      const player = document.getElementById("audio-player");
+      const songName = document.getElementById("song-name");
+      const playBtn = document.getElementById("play-btn");
+
+      player.src = songs[currentSong].src;
+      player.volume = parseFloat(localStorage.getItem("volume")) || 0.5;
+      songName.textContent = songs[currentSong].name;
+      document.getElementById("volume-slider").value = player.volume;
+
+      player.addEventListener("loadedmetadata", () => {
+        const savedTime = parseFloat(localStorage.getItem("songTime")) || 0;
+        player.currentTime = savedTime;
+      });
+
+      setInterval(() => {
+        localStorage.setItem("songTime", player.currentTime);
+        localStorage.setItem("currentSong", currentSong);
+      }, 1000);
+
+      function togglePlay() {
+        if (player.paused) {
+          player.play();
+          playBtn.textContent = "⏸ Pause";
+        } else {
+          player.pause();
+          playBtn.textContent = "▶ Play";
+        }
+      }
+
+      function skipSong() {
+        currentSong = (currentSong + 1) % songs.length;
+        player.src = songs[currentSong].src;
+        songName.textContent = songs[currentSong].name;
+        localStorage.setItem("currentSong", currentSong);
+        localStorage.setItem("songTime", 0);
+        player.play();
+        playBtn.textContent = "⏸ Pause";
+      }
+
+      function changeVolume(val) {
+        player.volume = val;
+        localStorage.setItem("volume", val);
+      }
+
+      player.addEventListener("ended", skipSong);
+    </script>
   </body>
 </html>
