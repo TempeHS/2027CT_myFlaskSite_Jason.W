@@ -14,7 +14,7 @@
         height="32"
         class="me-2 rounded"
       />
-      <span>My Flask Site</span>
+      <span>Jason's Resume</span>
     </a>
     <button
       class="navbar-toggler"
@@ -27,11 +27,13 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('about') }}">About</a>
         </li>
         <li class="nav-item dropdown">
           <a
@@ -70,7 +72,6 @@
           <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
         </li>
       </ul>
-
       <form
         class="d-flex ms-3"
         role="search"
