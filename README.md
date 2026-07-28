@@ -58,14 +58,29 @@ planning. Be honest and use evidence — point to a page, a feature or a test.
 
 ### 3.1 Your Statement of Intent
 
-<!-- Paste the Statement of Intent you wrote during planning so the reader can judge your site against it. -->
+What is the Website?
+Having a resume/CV is important for future jobs. Thus the idea of my website, Jason Wang. It includes what a typical resume would (Name, experiences, educations, projects and more) . The employer will be able to see who I am, what I've completed, and how I completed these projects. It will tell more about myself, such as skills, work experience, or awards. Different tabs such as Home, projects, or CV will be easier to navigate rather than reading through a normal resume. It is able to make life simpler for the employer, while trying to impress the front-end user.
+
+Why is the website needed? (Problem and Solution)
+The problem of today. People are easily able to lie or chatgpt a certain part of their resume, like skills for example. This causes a problem during work hours or work area. Having led about skills can cause a safety hazard, especially if near dangerous materials (flammables). Surveys indicate, from 33% to over 70% of the population lie about their resume.
+
+My resume will be different from others. Rather than just having words on words of writing, it'll have live demonstrations of projects I have created, such as the AI ChatBot I created. With this live or proof that I have created it, I will then provide extra information that will contribute to the project. This could mean I show the steps of it being built, or what it can be used for. These will be long pages of writing, but ultimately give the workplace a safe environment.
+
+Who is it for?
+ The main audience is for the employers that hire me. They want to hire honest and reliable people, rather than people who lie and are unreliable. It will also show the employers who I am and why I should be the one employed. Not only can employers look at it, other audiences such as years 9-12 can look at my resume to get ideas for their assessments. The projects I have created could inspire many students that choose computer technology as their elective.
+
+Summary
+The outcome I expect would be very similar to what a resume would get me. It would help the employers have a safe environment, an interesting frontend to play around with, and the demonstrations are able to inspire people such as year 9 students in high school. It will ultimately not only help me get a job, but inspires others to create something unique as their own, and a highly likely chance to create their own resume like mine.
+
+
 
 ### 3.2 What You Delivered
 
 | Page    | Route      | What it delivers |
 | ------- | ---------- | ---------------- |
-| Home    | `/`        |                  |
-| Contact | `/contact` |                  |
+| Home    | `/`        |      This is the home page, the base page of all tabs and pages. It allows me to Introduce myself and the website, while highlighting key features of my website, and also providing navigations to other pages.             |
+| Contact | `/contact` |        It allows users to interact with the website, contacting me through various ways, being email, phone, and more          |
+| About | `/about ` |        This page delivers a little bit about me. It shows images of me, what I do, games I play, and what my current Job is.          |
 
 ### 3.3 Evaluation Against Your Intent (2–3 paragraphs)
 
