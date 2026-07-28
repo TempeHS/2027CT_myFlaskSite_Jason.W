@@ -28,6 +28,7 @@
 ## 2. Walkthrough Video (2 minutes)
 
 This is the most important part of your documentation — it shows your website running.
+https://github.com/user-attachments/assets/88d8389d-e908-40a4-b1b4-b581bd70bf1c
 
 <!--
   Embed a ~2 minute walkthrough. Replace VIDEO_ID with your YouTube video ID:
