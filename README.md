@@ -40,8 +40,8 @@ https://github.com/user-attachments/assets/88d8389d-e908-40a4-b1b4-b581bd70bf1c
 
 | Field            | Detail |
 | ---------------- | ------ |
-| **Link / Embed** |        |
-| **Duration**     |        |
+| **Link / Embed** |     https://github.com/user-attachments/assets/88d8389d-e908-40a4-b1b4-b581bd70bf1c   |
+| **Duration**     |     2:36   |
 
 **Your walkthrough should show:**
 
