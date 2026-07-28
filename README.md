@@ -83,8 +83,12 @@ The outcome I expect would be very similar to what a resume would get me. It wou
 | Page    | Route      | What it delivers |
 | ------- | ---------- | ---------------- |
 | Home    | `/`        |      This is the home page, the base page of all tabs and pages. It allows me to Introduce myself and the website, while highlighting key features of my website, and also providing navigations to other pages.             |
-| Contact | `/contact` |        It allows users to interact with the website, contacting me through various ways, being email, phone, and more          |
+| Contact | `/contact` |        It allows users to interact with the website, contacting me through various ways, being email, phone, and more.          |
 | About | `/about ` |        This page delivers a little bit about me. It shows images of me, what I do, games I play, and what my current Job is.          |
+| Projects | `/projects` |       Projects are what I've completed and want to showcase. It gives me the chance to show people what I'm capable of, and how it was done.           |
+| Project 1 | `/project1` |       Project 1 was about this current website, showing how it was made, and what I did to create this project.         |
+| Project 2| `/project2` |       Project 2 is about a cipherforge, it helps decrypt and encrypt messages that need to be privated. It also shows the user how it was made, and what I have done.      |
+| Search | `/search` |       The search is apart of the Nav-Bar, where the user is allowed to search pages, but searching the wrong page will take you to an error page.           |
 
 ### 3.3 Evaluation Against Your Intent (2–3 paragraphs)
 
@@ -115,7 +119,8 @@ The outcome I expect would be very similar to what a resume would get me. It wou
 | Bootstrap     | Bootstrap team   | MIT     | Layout and components  |
 | Flask         | Pallets Projects | BSD     | Web server and routing |
 | Images        |  Google          | CCL     | Website images, logos, headers|
-|               |                  |         |                        |
+| Copilot              | Open AI                 |  AWS CLI       |   Failures, and code edits.                     |
+| Songs         | qrco2.fr   | copyright and DMCA compliance policy     |   Music for Website            |
 
 ---
 
