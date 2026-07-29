@@ -41,6 +41,8 @@ This is the most important part of your documentation — it shows your website 
 | ---------------- | ------ |
 | **Link / Embed** |     https://github.com/user-attachments/assets/88d8389d-e908-40a4-b1b4-b581bd70bf1c   |
 | **Duration**     |     2:36   |
+| **Phone Home Page**     |     <img width="399" height="859" alt="image" src="https://github.com/user-attachments/assets/fab8b643-cc11-47fc-8993-cb75003dba33" />
+   |
 
 **Your walkthrough should show:**
 
