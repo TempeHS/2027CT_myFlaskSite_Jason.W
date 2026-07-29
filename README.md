@@ -98,7 +98,9 @@ The outcome I expect would be very similar to what a resume would get me. It wou
 > delivered site meets it**. Where did you meet your intent? Where did you fall
 > short, and why? Support every judgement with evidence from your site.
 
-<!-- Write 2–3 paragraphs. -->
+Even though my statement of intent does not match my current site fully, it still is able to meet the criteria of helping the audience engage in my website, and find out who I really am. In the first paragraph, What is the website?, I have met the criteria of it being easy to navigate, and easy to read rather than a normal resume. It has quick to click nav-bar tabs, and a search bar that allows you to find pages you don't see.
+
+
 
 ### 3.4 Overall Effectiveness (1–2 paragraphs)
 
