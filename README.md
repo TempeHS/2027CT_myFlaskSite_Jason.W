@@ -100,6 +100,9 @@ The outcome I expect would be very similar to what a resume would get me. It wou
 
 Even though my statement of intent does not match my current site fully, it still is able to meet the criteria of helping the audience engage in my website, and find out who I really am. In the first paragraph, What is the website?, I have met the criteria of it being easy to navigate, and easy to read rather than a normal resume. It has quick to click nav-bar tabs, and a search bar that allows you to find pages you don't see.
 
+In paragraph 2 and 3 I talk about why the website is needed. The usage of AI in the modern day is evident, having around 1.5 Billion people using it daily. My site creates an interative design, created by myself, with real examples of my skills, or projects. This can ultimately lead to a safer work environment, and have the user trust who I am. It has steps on how I created the website, and how it works, all of which I have created and know the most about. Even though my Resume is different from others, I still have a contact area if the user needs a hard copy of my resume.
+
+Though in paragraph 4, I do explain that the targeted audience is employers and students, but I want to widen this range. People who check in "/about" will notice the games I play, and my current hobbies. People such as friends, can know even more about me, creating a lasting friendship that was based of my website. Not only will it help create friendships, help students, or get me a job, but it allows users to have fun while interacting with my live website.
 
 
 ### 3.4 Overall Effectiveness (1–2 paragraphs)
