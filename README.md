@@ -111,7 +111,9 @@ Though in paragraph 4, I do explain that the targeted audience is employers and 
 > achieving its purpose for its target audience? Weigh what works against what
 > falls short, and state what you would improve to better meet your intent.
 
-<!-- Write 1–2 paragraphs. -->
+The overall effectiveness of my wesbite can be seen as mostly effective. Yes, it does reach my success criteria, but not in all ways. The design of the website does not match my imagined website. The front page of my current webite does not 'POP' out like I wanted to. It instead has a more formal look towards it, rather than the bold 'JASON WANG'. EVen though it does not meet that criteria, it still meets the passing mark of making it be descripitve and welcoming. 
+
+
 
 ---
 
