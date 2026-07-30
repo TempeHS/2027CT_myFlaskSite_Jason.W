@@ -113,7 +113,7 @@ Though in paragraph 4, I do explain that the targeted audience is employers and 
 
 The overall effectiveness of my wesbite can be seen as mostly effective. Yes, it does reach my success criteria, but not in all ways. The design of the website does not match my imagined website. The front page of my current webite does not 'POP' out like I wanted to. It instead has a more formal look towards it, rather than the bold 'JASON WANG'. EVen though it does not meet that criteria, it still meets the passing mark of making it be descripitve and welcoming. 
 
-
+In my opinion, my website has me the criteria, not only for reaching the target audience, but also meeting their criterias. It explains how to do codes, and what they mean, for example the Cipherforge. If students were to create a Cipherforge app like mine, they'll be able to see how it was designed, and the complecations I had gotten into. For employers, it explains what I'm good at, a little bit about me, and what I have created. It breifly explains what I have achieved in a short summary, which I can later on extend.
 
 ---
 
